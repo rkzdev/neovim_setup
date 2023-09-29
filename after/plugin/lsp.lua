@@ -35,6 +35,7 @@ lsp_zero.format_on_save({
       "lua",
     },
     ["rust_analyzer"] = { "rust" },
+    ["gopls"] = { "go" },
   },
 })
 
@@ -66,6 +67,7 @@ cmp.setup({
   formatting = cmp_format,
   mapping = cmp.mapping.preset.insert({
     ["<CR>"] = cmp.mapping.confirm({ select = false }),
+    ["<C-Space>"] = cmp.mapping.complete(),
   }),
 })
 
